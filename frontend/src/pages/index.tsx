@@ -4,13 +4,7 @@ import NavBar from '@/components/NavBar'
 import SearchField from '@/components/SearchField'
 import ResponseField from '@/components/ResponseField'
 import React, {useState} from 'react'
-
-interface Response {
-  query: string,
-  response: string,
-  timestamp: string,
-  id: string;
-}
+import { Response } from '../types/types'
 
 export default function Home() {
 
@@ -22,7 +16,6 @@ export default function Home() {
         <title>r/ELI5</title>
       </Head>
       <main>
-        {console.log('page refresh', response)}
         <NavBar />
         <SearchField setResponse={setResponse}/>
         <ResponseField response={response}/>

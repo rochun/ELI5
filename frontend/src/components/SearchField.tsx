@@ -1,12 +1,6 @@
 import React, { ChangeEvent, useState } from 'react';
 import axios from 'axios'
-
-interface Response {
-  query: string,
-  response: string,
-  timestamp: string,
-  id: string;
-}
+import { Response } from '../types/types'
 
 interface Props {
   setResponse: (value: Response) => void,

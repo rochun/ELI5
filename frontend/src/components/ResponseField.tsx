@@ -1,12 +1,6 @@
 import React from 'react';
 import Typed from 'react-typed'
-
-interface Response {
-  query: string,
-  response: string,
-  timestamp: string,
-  id: string;
-}
+import { Response } from '../types/types'
 
 interface Props {
   response: Response | undefined
