@@ -23,10 +23,10 @@ const callToOpenAi = async (message) => {
 
 exports.chatgpt = (req, res) => {
   const { message } = req.query;
-
+  console.log('endpoint called')
   callToOpenAi(message)
     .then((result) => {
-      // console.log(result);
+      console.log(result);
       res.status(200).send(result);
     })
     .catch((err) => {
